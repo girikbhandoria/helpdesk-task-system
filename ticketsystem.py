@@ -33,7 +33,7 @@ class TicketSystem:
 
             for ticket in self.tickets:
 
-                print(f"ID: {ticket.ticket_id}, Description: {ticket.description}, Category: {ticket.category}, Priority = {ticket.priority}, Status = {ticket.status}")
+                print(f"ID: {ticket.ticket_id}, Description: {ticket.description}, Category: {ticket.category}, Priority: {ticket.priority}, Status: {ticket.status}")
 
     
     def set_category(self, ticket_id, category):
