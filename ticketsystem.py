@@ -58,6 +58,12 @@ class TicketSystem:
 
             if ticket.ticket_id == ticket_id:
 
+                if ticket.status == "Resolved":
+
+                    print(f"Ticket #{ticket_id} has already been resolved!")
+                    return
+
+
                 ticket.resolve()
 
                 print(f"Ticket #{ticket_id} resolved.")
