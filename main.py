@@ -52,6 +52,7 @@ def main():
 
                 elif choice2 == "4":
 
+                    category = "Other" 
                     break
 
                 else:
@@ -105,7 +106,7 @@ def main():
 
         elif choice == "5":
 
-            print("\nExiting the Ticketing Marketing System.\n")
+            print("\nExiting the Ticket Marketing System.\n")
             break
         
         else:

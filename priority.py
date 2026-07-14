@@ -1,6 +1,3 @@
-import re
-
-
 class Priority:
 
     @staticmethod
@@ -10,10 +7,6 @@ class Priority:
         ticket_text = f"{description}".strip().lower()
 
         if not ticket_text:
-
-            return None
-        
-        if re.search(r"\d", ticket_text):
 
             return None
         
