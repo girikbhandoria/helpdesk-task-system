@@ -17,7 +17,7 @@ def main():
         print("5. Exit")
 
 
-        choice = input("Enter Your Choice: ")
+        choice = input("Enter Your Choice: ").strip()
 
 
         if choice == "1":
@@ -33,7 +33,7 @@ def main():
                 print("3. Network")
                 print("4. Other")
 
-                choice2 = input("Enter Your Choice: ")
+                choice2 = input("Enter Your Choice: ").strip()
 
                 if choice2 == "1":
 
@@ -106,7 +106,7 @@ def main():
 
         elif choice == "5":
 
-            print("\nExiting the Ticket Marketing System.\n")
+            print("\nExiting the Ticket Management System.\n")
             break
         
         else:
