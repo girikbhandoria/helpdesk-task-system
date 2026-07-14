@@ -1,4 +1,3 @@
-from validation import Validation
 from ticketsystem import TicketSystem
 from priority import Priority
 
@@ -65,15 +64,6 @@ def main():
 
                 description = input("\nEnter the Ticket Description: ")
 
-                # priority = Priority.auto_assign(description)
-
-                # if priority is None:
-
-                #     print("Invalid description!: Try again!")
-                #     continue
-
-                # ticket_id = system.create_ticket(description, priority, category)
-                # break
 
                 try:
 

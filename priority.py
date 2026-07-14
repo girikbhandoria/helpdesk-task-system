@@ -1,5 +1,6 @@
 from validation import Validation
 
+
 class Priority:
 
     @staticmethod
@@ -10,7 +11,7 @@ class Priority:
 
         ticket_text = f"{description}".strip().lower()
 
-        
+
         priority_rules = {
 
             "Critical": ["down", "crash", "breach", "outage", "broken", "security"],

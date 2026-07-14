@@ -22,3 +22,4 @@ class Validation:
     def validate_ticket_id(ticket_id):
         if not isinstance(ticket_id, int) or ticket_id <= 0:
             raise ValueError("Ticket ID must be a positive integer.")
+        

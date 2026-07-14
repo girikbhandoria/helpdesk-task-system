@@ -1,5 +1,6 @@
 from validation import Validation
 
+
 class Tickets:
     
     def __init__(self, ticket_id, description, category, priority):

@@ -86,6 +86,7 @@ class TicketSystem:
 
         Validation.validate_ticket_id(ticket_id)
         
+        
         for ticket in self.tickets:
 
             if ticket.ticket_id == ticket_id:
