@@ -1,3 +1,4 @@
+from validation import Validation
 from ticket import Tickets
 
 
@@ -11,6 +12,12 @@ class TicketSystem:
     
     
     def create_ticket(self, description, priority, category=None):
+
+        Validation.validate_description(description)
+
+        Validation.validate_priority(priority)
+
+        Validation.validate_category(category)
 
         ticket = Tickets(self.next_id, description, category, priority)
 
@@ -38,6 +45,8 @@ class TicketSystem:
     
     def set_category(self, ticket_id, category):
 
+        Validation.validate_ticket_id(ticket_id)
+
         
         for ticket in self.tickets:
 
@@ -53,6 +62,8 @@ class TicketSystem:
 
     
     def resolve_ticket(self, ticket_id):
+
+        Validation.validate_ticket_id(ticket_id)
         
         for ticket in self.tickets:
 
@@ -72,6 +83,8 @@ class TicketSystem:
         print(f"Ticket #{ticket_id} not found.")
     
     def del_ticket(self, ticket_id):
+
+        Validation.validate_ticket_id(ticket_id)
         
         for ticket in self.tickets:
 

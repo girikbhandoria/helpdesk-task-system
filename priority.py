@@ -1,14 +1,15 @@
+from validation import Validation
+
 class Priority:
 
     @staticmethod
 
     def auto_assign(description):
 
+        Validation.validate_description(description)
+
         ticket_text = f"{description}".strip().lower()
 
-        if not ticket_text:
-
-            return None
         
         priority_rules = {
 
