@@ -64,6 +64,7 @@ class TicketSystem:
     def resolve_ticket(self, ticket_id):
 
         Validation.validate_ticket_id(ticket_id)
+
         
         for ticket in self.tickets:
 

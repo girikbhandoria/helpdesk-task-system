@@ -62,7 +62,7 @@ def main():
 
             while True:
 
-                description = input("\nEnter the Ticket Description: ")
+                description = input("\nEnter the Ticket Description: ").strip()
 
 
                 try:

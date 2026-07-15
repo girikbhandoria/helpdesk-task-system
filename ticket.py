@@ -15,6 +15,7 @@ class Tickets:
 
         self.status = "Open"
 
+
         Validation.validate_ticket_id(ticket_id)
 
         Validation.validate_description(description)
